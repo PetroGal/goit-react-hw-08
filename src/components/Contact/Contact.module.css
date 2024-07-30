@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  width: 280px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameWrap {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneWrap {
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+  margin-right: 10px;
+  font-size: 20px;
+}

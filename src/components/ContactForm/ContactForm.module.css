@@ -1,0 +1,41 @@
+.form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.phoneWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formBtn {
+  width: 130px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.nameInput {
+  height: 30px;
+}
+
+.phoneInput {
+  height: 30px;
+}
+
+.nameLabel {
+  margin-bottom: 4px;
+}
+
+.phoneLabel {
+  margin-bottom: 4px;
+}
