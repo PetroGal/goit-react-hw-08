@@ -7,14 +7,11 @@ import { selectLoading } from './selectors';
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',
   async (_, thunkAPI) => {
-    thunkAPI.dispatch(selectLoading(true));
     try {
       const res = await axios.get('/contacts');
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
-    } finally {
-      thunkAPI.dispatch(selectLoading(false));
     }
   }
 );

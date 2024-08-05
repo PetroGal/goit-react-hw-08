@@ -56,12 +56,12 @@ const contactsSlice = createSlice({
       .addCase(deleteContact.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;
+      })
+      .addCase(logOut.fulfilled, state => {
+        state.items = [];
+        state.error = null;
+        state.isLoading = false;
       });
-    // .addCase(logOut.fulfilled, state => {
-    //   state.items = [];
-    //   state.error = null;
-    //   state.isLoading = false;
-    // });
   },
 });
 
