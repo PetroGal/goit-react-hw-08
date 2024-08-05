@@ -1,3 +1,11 @@
+:root {
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -45,6 +53,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 input {
